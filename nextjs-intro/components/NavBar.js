@@ -5,10 +5,10 @@ export default function NavBar(){
     const router = useRouter();
     return(
         <nav>
-            <Link href="/" legacyBehavior>
+            <Link href="/"  className={router.pathname === "/" ? "active" : ""}>
                 Home
             </Link>
-            <Link href="/about" legacyBehavior>
+            <Link href="/about"  className={router.pathname === "/about" ? "active" : ""}>
                 About
             </Link>
             <style jsx global>{`
@@ -17,6 +17,9 @@ export default function NavBar(){
                 }
                 a {
                     text-decoration: none;
+                }
+                .active {
+                    color: white;
                 }
             `}</style>
         </nav>
