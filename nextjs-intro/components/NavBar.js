@@ -12,15 +12,7 @@ export default function NavBar(){
                 About
             </Link>
             <style jsx global>{`
-                nav {
-                    background-color: tomato;
-                }
-                a {
-                    text-decoration: none;
-                }
-                .active {
-                    color: white;
-                }
+               
             `}</style>
         </nav>
     )
